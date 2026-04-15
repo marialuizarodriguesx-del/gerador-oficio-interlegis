@@ -6,15 +6,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
   <style>
-    /* Fundo da página com Cinza Claro */
     body { font-family: 'Segoe UI', sans-serif; background-color: #d9d6d1; padding: 20px; color: #000; } 
     .container { max-width: 900px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
     
-    /* Títulos e detalhes com Azul Padrão */
     h2 { color: #00305c; border-bottom: 2px solid #00305c; padding-bottom: 10px; } 
     h3 { font-size: 1.1em; color: #00305c; margin-top: 25px; background: #d9d6d1; padding: 10px; border-radius: 4px; } 
     
-    /* Estilos da caixa de informação */
     .info-box { background-color: #d9d6d1; border-left: 4px solid #00305c; padding: 15px; margin-bottom: 25px; border-radius: 4px; font-size: 0.95em; line-height: 1.5; color: #000; }
     .info-box h4 { margin-top: 0; color: #00305c; margin-bottom: 10px; font-size: 1.05em; }
     .info-box p { margin-bottom: 10px; }
@@ -24,7 +21,6 @@
     .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px; }
     .campo { display: flex; flex-direction: column; margin-bottom: 10px; }
     
-    /* Textos com Preto Puro para melhor contraste */
     label { font-weight: bold; margin-bottom: 5px; font-size: 0.9em; color: #000; } 
     input, select, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; color: #000; } 
     
@@ -34,11 +30,9 @@
     
     button { cursor: pointer; border: none; border-radius: 4px; font-weight: bold; transition: 0.3s; }
     
-    /* Botão Adicionar com Verde Padrão */
     .btn-add { background-color: #00824a; color: white; padding: 10px 15px; margin-bottom: 20px; } 
     .btn-add:hover { background-color: #00663a; }
     
-    /* Botão Principal com Azul Padrão */
     .btn-submit { background-color: #00305c; color: white; padding: 15px; width: 100%; font-size: 1.1em; margin-top: 30px; } 
     .btn-submit:hover { background-color: #001a33; }
   </style>
@@ -50,7 +44,6 @@
       <h2>Gerador de Ofício Interlegis</h2>
 
       <div class="info-box">
-        <h4>Solicitação referente a Produtos e Serviços do Programa Interlegis</h4>
         <p><strong>Prezado(a),</strong></p>
         <p>Preencha com atenção este formulário. <strong>Atenção: os campos marcados com asterisco (*) são de preenchimento obrigatório.</strong> Ao final, clique no botão <strong>"Gerar Ofício PDF"</strong>. Será emitido um ofício em formato PDF, o qual deve ser assinado digitalmente pelo(a) presidente de sua casa legislativa. É possível utilizar <a href="https://www.gov.br/governodigital/pt-br/assinatura-eletronica" target="_blank">GOV.BR</a>, <a href="https://www.autentique.com.br/" target="_blank">Autentique</a> (gratuito para e-mails institucionais de órgãos públicos) ou certificado digital equivalente que permita a autenticação. Em seguida, abra um chamado em <a href="https://suporte.interlegis.leg.br" target="_blank">suporte.interlegis.leg.br</a> e anexe o ofício assinado.</p>
         <p><strong>Indicação de responsáveis técnicos:</strong> sua finalidade é representar a Casa Legislativa nos atendimentos junto ao Interlegis, podendo solicitar produtos, autorizar manutenção, desativação ou migração. Sempre designar contatos capazes desta tomada de decisão.</p>
@@ -161,7 +154,7 @@
       <div class="grid">
         <div class="campo"><label>Endereço da Casa (Rua, nº, Bairro, UF):*</label><input type="text" id="endCasaRodape" required></div>
         <div class="campo"><label>CEP:*</label><input type="text" id="cepRodape" required></div>
-        <div class="campo"><label>Site (.leg.br):*</label><input type="text" id="siteRodape" required></div>
+        <div class="campo"><label>Site:*</label><input type="text" id="siteRodape" required></div>
       </div>
 
       <button type="submit" class="btn-submit">Gerar Ofício PDF</button>
